@@ -1,0 +1,13 @@
+{
+    "name": "МирИгр",
+    "description": "МирИгр - лучший сайт для новостей и играм",
+    "display": "standalone",
+    "background-color": "#fff",
+    "orientation": "portrait-primary",
+    "icons": [
+        {
+            "src": "icons/Logo.png",
+            "sizes": "192x192"
+        }
+    ]
+}

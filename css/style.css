@@ -1,0 +1,249 @@
+:root {
+    --main-color: #87edff;
+    --main-colorDarker: #2692a5;
+    --secondar-color: #ffffff;
+    --accent-color: #131010;
+    --accent-color-hover: #505050;
+    --black-color: #0a0909;
+    --transition: 0.3s;
+}
+
+body {
+    font-family: 'Roboto', 'sans-serif';
+}
+
+.header {
+    background-color: var(--main-color);
+    padding: 15px 0;
+}
+
+.container {
+    max-width: 1500px;
+    margin: 0 auto;
+}
+
+.header_wrapper,
+.footer-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-burger {
+    display: none;
+    position: relative;
+    max-width: 50px;
+}
+
+.menu-active {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    position: absolute;
+    right: 0;
+    background-color: var(--main-color);
+    min-width: 150px;
+    padding: 10px 30px;
+    margin-top: 10px;
+}
+
+.menu-list {
+    display: flex;
+    gap: 35px;
+}
+
+
+.menu-link,
+.footer-menu-link,
+.footer_contacts-item,
+.footer_politic,
+.footer_copyright {
+    color: var(--black-color);
+    transition: var(--transition);
+}
+
+.menu-link:hover {
+    color: var(--accent-color-hover);
+}
+
+.header_button  {
+    font-weight: bold;
+    color: var(--secondar-color);
+    background-color: var(--accent-color);
+    padding: 15px 25px;
+    border-radius: 10px;
+    transition: var(--transition);
+    border: 6px solid var(--accent-color-hover);
+}
+
+.header_button:hover {
+    background-color: var(--accent-color-hover);
+    border: 6px solid var(--accent-color);
+}
+
+.hero {
+    background-image: url("../img/abstract_gradient_shape_with_lights_background.jpg");
+    background-size: cover;
+    padding: 200px 0;
+    color: var(--main-color);
+}
+
+.hero-title {
+    font-size: 120px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.hero-text {
+    font-size: 28px;
+    margin-bottom: 36px;
+    text-align: center;
+}
+
+.menu {
+    display: flex;
+    gap: 30px;
+
+    align-items: flex-start;
+}
+
+
+.sidebar {
+    position: sticky;
+    top: 20px; 
+
+    width: 200px;
+    height: fit-content;
+
+    background: var(--accent-color);
+    padding: 20px;
+}
+
+
+
+.news-title,
+.games-title {
+    text-align: center;
+    font-size: 70px;
+    padding: 20px;
+}
+
+.news_card {
+    border: 1px solid var(--main-colorDarker);
+    padding: 40px;
+    font-size: 20px;
+    margin: 20px;
+}
+
+.more {
+    display: none;
+}
+
+#MoreButton,
+#MoreButtonTwo {
+    background-color: var(--accent-color);
+    color: var(--secondar-color);
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid var(--accent-color);
+}
+
+.game_card {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    border: 1px solid var(--main-colorDarker);
+    padding: 20px;
+    margin: 20px;
+}
+
+
+.game_img {
+    margin: 10px;
+    height: 250px;
+    flex-shrink: 0;
+}
+
+.game-text {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    font-size: 20px;
+}
+
+.moreTwo {
+    display: none;
+}
+
+.subscribe {
+    background-color: var(--accent-color);
+    color: var(--secondar-color);
+    padding: 30px;
+}
+
+.subscribe_wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.form-subscribe {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.form-input {
+    font-size: 16px;
+    padding: 15px 30px;
+    border: 1px solid var(--main-color);
+    background-color: var(--secondar-color);
+    width: 300px;
+    border-radius: 18px;
+    font-family: 'Roboto', 'sans-serif';
+}
+
+.form-button {
+    font-weight: bold;
+    color: var(--accent-color);
+    background-color: var(--main-color);
+    border: 3px solid var(--main-colorDarker);
+    padding: 15px 25px;
+    border-radius: 10px;
+    transition: var(--transition);
+}
+
+
+.form-button:hover {
+    background-color: var(--main-colorDarker);
+}
+
+.footer {
+    background-color: var(--main-color);
+    padding: 80px 0 30px 0;
+}
+
+.footer-menu-item {
+    padding: 7px 0;
+}
+
+.footer-menu-item a:hover {
+    color: var(--accent-color-hover);
+}
+
+
+.footer_contacts {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    text-align: right;
+}
+
+.footer_wrapper-two {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
