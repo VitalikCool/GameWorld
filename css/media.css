@@ -54,10 +54,13 @@
         gap: 15px;
         align-items: start;
     }
-    .game-text {
-        font-size: 15px;
+     .game-text {
+        font-size: 10px;
     }
 
+    .game_img {
+        height: 150px;
+    }
 }
 
 @media (max-width: 465px) {
@@ -82,8 +85,12 @@
     .subscribe{
         padding: 5px;
     }
-    .game-text {
-        font-size: 15px;
+     .game-text {
+        font-size: 10px;
+    }
+
+    .game_img {
+        height: 150px;
     }
 
 }
@@ -106,8 +113,11 @@
     }
 
     .game-text {
-        font-size: 15px;
+        font-size: 10px;
     }
 
+    .game_img {
+        height: 150px;
+    }
 
 }
